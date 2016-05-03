@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="resizeMap()">
     <div class="mainbody">
         <img src="img/desk.jpg" class="desk" alt="Desk" usemap="#deskmap">
         <map name="deskmap">
@@ -38,9 +38,9 @@
     <script src="js/imageMapResizer.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-      $('map').imageMapResize();
-    });
+        function resizeMap(){
+            $('map').imageMapResize();
+        }    
     </script>
   </body>
 </html>
